@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 12 Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="taskbar">
+        <div class="start-button" onclick="toggleStartMenu()">Пуск</div>
+        <div class="taskbar-icons">
+            <div class="icon" onclick="openWindow('calc')">Калькулятор</div>
+            <div class="icon" onclick="openWindow('notepad')">Блокнот</div>
+        </div>
+    </div>
+    <div class="start-menu" id="start-menu">
+        <div class="start-menu-item" onclick="openWindow('calc')">Калькулятор</div>
+        <div class="start-menu-item" onclick="openWindow('notepad')">Блокнот</div>
+    </div>
+    <div class="desktop" id="desktop">
+        <!-- Окна будут открываться здесь -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

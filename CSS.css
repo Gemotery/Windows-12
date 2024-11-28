@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    background-color: #0078d7;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.start-button {
+    background-color: #005a9e;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.taskbar-icons {
+    display: flex;
+    margin-left: auto;
+}
+
+.icon {
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid transparent;
+    transition: border 0.2s;
+}
+
+.icon:hover {
+    border: 1px solid white;
+}
+
+.start-menu {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    display: none;
+    width: 150px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.start-menu-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.start-menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+.desktop {
+    position: relative;
+    height: calc(100vh - 40px);
+    background-color: #e6e6e6;
+}
+
+.window {
+    position: absolute;
+    border: 1px solid #0078d7;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    width: 300px;
+}
